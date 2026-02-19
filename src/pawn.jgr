@@ -1,0 +1,27 @@
+(* white chess pawn *)
+newgraph
+xaxis min 0 max 10 nodraw
+yaxis min 0 max 10 nodraw
+
+(* pawn base *)
+newline bezier poly pfill 1 linethickness 10 pts
+  0 0 2.5 0 7.5 0 10 0
+    10 2 8 2 6 4
+    5.5 4 4.5 4 4 4
+    2 2 0 2 0 0
+
+(* pawn center circle *)
+newline poly pfill 1 linethickness 10 pts
+    shell : echo "" | awk '{ \
+        pi = atan2(0, -1); \
+        for (i = 0; i <= 360; i += 1) { \
+            printf(" %f %f",2*sin(i*pi/180)+5,2*cos(i*pi/180)+6); \
+        } printf("\n") }'
+
+(* pawn top circle *)
+newline poly pfill 1 linethickness 10 pts
+    shell : echo "" | awk '{ \
+        pi = atan2(0, -1); \
+        for (i = 0; i <= 360; i += 1) { \
+            printf(" %f %f",1*sin(i*pi/180)+5,1*cos(i*pi/180)+9); \
+        } printf("\n") }'

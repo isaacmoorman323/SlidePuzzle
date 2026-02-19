@@ -1,0 +1,131 @@
+newgraph
+xaxis min 0 max 10 nodraw
+yaxis min 0 max 10 nodraw
+
+(* ears *)
+newline bezier poly pcfill .9 .4 .0 linethickness 0 pts
+1.5 4
+
+1.5 6
+1.5 6
+
+1 9.5
+
+3 8
+3 8
+
+7 7.5
+
+newline bezier poly pcfill .5 .5 .5 linethickness 0 pts
+8.5 4
+
+8.5 6
+8.5 6
+9 9.5
+
+7 8
+7 8
+
+3 7.5
+
+
+(* base circle *)
+newline poly pfill .9 linethickness 1 pts
+    shell : echo "" | awk '{ \
+        pi = atan2(0, -1); \
+        for (i = 0; i <= 360; i += 1) { \
+            printf(" %f %f",4*sin(i*pi/180)+5,4*cos(i*pi/180)+4); \
+        } printf("\n") }'
+
+(* spots *)
+newline bezier poly pcfill .9 .4 .0 linethickness 0 pts
+1.7 1.7
+0 4
+
+1 7.8
+5 8
+5 7
+
+7.5 5.2
+6.5 4.2
+5.5 3.2
+
+2.7 0.7
+1.7 1.7
+
+(* spot 2 *)
+newline bezier poly pfill .5 linethickness 0 pts
+6 1.2
+5.8 1.4
+
+7 3
+7.5 2.5
+8 2
+
+6.2 1.0
+6 1.2
+
+(* eye left *)
+newline bezier poly pfill .1 linethickness 0 pts
+3.5 6
+3.9 6
+3.9 4
+3.5 4
+3.1 4
+3.1 6
+3.5 6
+newline bezier poly pfill 1 pts
+3.5 6
+3.7 6
+3.7 5.5
+3.5 5.5
+3.3 5.5
+3.3 6
+3.5 6
+
+(* eye right *)
+newline bezier poly pfill .1 linethickness 0 pts
+6.5 6
+6.1 6
+6.1 4
+6.5 4
+6.9 4
+6.9 6
+6.5 6
+
+newline bezier poly pfill 1 pts
+6.5 6
+6.3 6
+6.3 5.5
+6.5 5.5
+6.7 5.5
+6.7 6
+6.5 6
+
+(* mouth *)
+newline bezier pts
+4 2.5
+4 1.5
+
+5 1.5
+5 2.5
+5 1.5
+
+6 1.5
+6 2.5
+
+(* nose *)
+newline poly pcfill 1 .8 .8 linethickness 0 pts
+4.8 3
+5 2.5
+5.2 3
+
+(* fangs *)
+newline poly pfill 0 linethickness 0 pts
+4.4 1.8
+4.5 1.5
+4.6 1.8
+newline poly pfill 0 linethickness 0 pts
+5.6 1.8
+5.5 1.5
+5.4 1.8
