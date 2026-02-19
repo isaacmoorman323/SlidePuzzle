@@ -1,6 +1,6 @@
-# Jgraph Slide Puzzle
+# Slide Puzzle
 
-Jgraph Slide Puzzle creates a slide puzzle out of a jgraph output file.
+Slide Puzzle creates a slide puzzle out of a jgraph output post script file.
 It places the output into out.jpg in the root directory, and changes the file when input is provided on the command line
 
 ## Setup the repository
