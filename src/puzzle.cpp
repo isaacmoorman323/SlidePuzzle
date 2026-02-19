@@ -169,13 +169,14 @@ int puzzle::output() {
 	//lines
 	for (int i = 1; i < width; i++){
 		fprintf(f, "newline linethickness 1 pts %f %f %f %f\n",
-				((float) width / 3.0f) * (float) i, 0.0f,
-				((float) width / 3.0f) * (float) i, -((float) height));
+				(float) i, 0.0f,
+				(float) i, -((float) height));
+
 	}
 	for (int i = 1; i < height; i++){
 		fprintf(f, "newline linethickness 1 pts %f %f %f %f\n",
-				0.0f, -((float) height / 3.0f)* (float) i,
-				(float) width, -((float) height / 3.0f) * (float) i);
+				0.0f, -((float) i),
+				(float) width, -((float) i));
 	}
 
 
