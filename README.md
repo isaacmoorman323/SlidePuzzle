@@ -17,6 +17,13 @@ Image files converted into post script do not work, you need post script generat
 ```
 There are a few examples in the objects directory to try as well as the one that automatically is used.
 
+Here are some pictures of the scrambled examples
+![cat](forest/cat.jpg)
+
+![cat](forest/pawn.jpg)
+
+![cat](forest/UT.jpg)
+
 ### Arguments
 * `filename` : path to the post script file to use
 * `height` : the number of rows of the puzzle

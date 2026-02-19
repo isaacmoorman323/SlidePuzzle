@@ -2,7 +2,7 @@ newgraph
 xaxis min 0 max 5.3 nodraw
 yaxis min 0.2 max 5.3 nodraw
 
-newline color 1 0.51 0 poly pcfill 1 0.51 0 linethickness 0 pts
+newline color 1 1 1 poly pcfill 1 1 1 linethickness 0 pts
 0 0.2
 0 5.3
 5.3 5.3
@@ -10,7 +10,7 @@ newline color 1 0.51 0 poly pcfill 1 0.51 0 linethickness 0 pts
 0 0.2
 
 (* right *)
-newline color 1 1 1 bezier poly pcfill 1 1 1 linethickness 0 pts
+newline color 1 0.51 0 bezier poly pcfill 1 0.51 0 linethickness 0 pts
 2.65 0.7
 3.7 0.7
 
@@ -46,7 +46,7 @@ newline color 1 1 1 bezier poly pcfill 1 1 1 linethickness 0 pts
 2.65 4.7
 
 (* left *)
-newline color 1 1 1 bezier poly pcfill 1 1 1 linethickness 0 pts
+newline color 1 0.51 0 bezier poly pcfill 1 0.51 0 linethickness 0 pts
 2.65 0.7
 1.6 0.7
 
