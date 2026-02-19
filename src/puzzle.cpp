@@ -222,7 +222,7 @@ int slicePicture(char *filename, int height, int width) {
 		perror("stat");
 		return -1;
 	}
-	if ((st.st_mode && S_IFMT) != S_IFREG) {
+	if ((st.st_mode & S_IFMT) != S_IFREG) {
 		fprintf(stderr, "%s is not regular file.\n", filename);
 		return -1;
 	}

@@ -5,3 +5,4 @@ bin/
 objects/
 src/jslice.jgr
 src/jmush.jgr
+*.swp
