@@ -3,7 +3,7 @@ all: src/puzzle.cpp
 	jgraph src/cathead.jgr > objects/cathead.ps
 	jgraph src/pawn.jgr > objects/pawn.ps
 	jgraph src/UTLogo.jgr > objects/UTLogo.ps
-	./bin/puzzle objects/cathead.ps 4 4
+	./bin/puzzle objects/cathead.ps 3 3
 
 
 clean:

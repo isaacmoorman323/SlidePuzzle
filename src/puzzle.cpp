@@ -314,6 +314,7 @@ int main(int argc, char **argv) {
 			delete p;
 			return -1;
 		}
+		printf("\n(w, a, s, d, or q to quit)\n");
 		printf("input move: ");
 
 		//get input
